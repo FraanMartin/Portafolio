@@ -106,11 +106,41 @@
     </section>
 
     <section id="sobre-mi" class="pt-16">
-        <div class="max-w-4xl mx-auto text-center py-16">
-            <h2 class="text-4xl font-bold mb-4">SOBRE MÍ</h2>
-            <p class="text-lg">Aquí puedes poner información sobre ti, tu experiencia, habilidades y cualquier otra cosa relevante.</p>
+        <div class="intro2">
+            <h2 class="text-5xl font-bold mb-4 text-center">SOBRE MÍ</h2> <!-- Reducir el margen inferior -->
+        </div>
+    
+        <div id="container" class="p-10 w-auto flex justify-center relative"> <!-- Reducir el padding -->
+            <div id="content" class="p-10 sm:p-8 md:p-10 lg:p-12 xl:p-10 w-full flex flex-col md:flex-row justify-center items-center text-center md:text-left"> <!-- Reducir el padding interno -->
+                <div class="mr-0 md:mr-10">
+                    <img
+                        class="rounded-lg max-w-[350px] w-full h-auto"
+                        src="img/Personal.jpeg"
+                        alt="image of myself"
+                    />
+                </div>
+                <div class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
+                    <h1 class="text-white font-bold text-3xl mt-6 mb-8">
+                        ¡Hola! Soy Fran
+                    </h1>
+                    <p class="text-white mb-10">
+                        Soy un recién graduado en grado superior de aplicaciones web apasionado por el desarrollo web. Mi viaje tecnológico comenzó con HTML, CSS y JavaScript, y me enganchó la emoción de crear sitios web dinámicos e interactivos. No dudes en conectarte si tienes preguntas, ideas de colaboración o simplemente quieres hablar de lo último en desarrollo web.
+                    </p>
+                    <div id="social" class="flex flex-wrap justify-center md:justify-start items-center gap-4">
+                        <a rel="noopener" target="_blank" href="https://github.com/FraanMartin" class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white">
+                            <img class="mr-2 hover:scale-105 transition duration-300 ease-in-out" src="https://ucarecdn.com/1f465c47-4849-4935-91f4-29135d8607af/github2.svg" width="20px" height="20px" alt="Github" />
+                            <span>Visita mi Github</span>
+                        </a>
+                        <a rel="noopener" target="_blank" href="www.linkedin.com/in/francisco-martin-rumi" class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white">
+                            <img class="mr-2 hover:scale-105 transition duration-300 ease-in-out" src="https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/linkedin.svg" width="20px" height="20px" alt="LinkedIn" />
+                            <span>Visita mi Linkedin</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <button id="scroll-to-top" class="flex items-center justify-center cursor-pointer bg-black text-white rounded-full">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -114,6 +114,18 @@ nav a img {
     opacity: 1; /* Muestra el h2 cuando se necesita */
 }
 
+#sobre-mi .intro2 {
+    width: 100%; /* Asegura que el contenedor del h2 ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    opacity: 0; /* Oculta el h2 inicialmente */
+    transition: opacity 3s ease; /* Transición suave para la aparición del h2 */
+}
+
+/* Clase para hacer visible el h2 */
+#sobre-mi .intro2.visible {
+    opacity: 1; /* Muestra el h2 cuando se necesita */
+}
+
 #proyectos .max-w-sm img {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: 250px; /* Ajusta la altura deseada para todas las imágenes */

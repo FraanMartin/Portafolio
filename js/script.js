@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navSobreMiLink = document.querySelector('nav a[href="#sobre-mi"]');
     const scrollToTopButton = document.getElementById('scroll-to-top');
     const introSection = document.querySelector('#proyectos .intro'); // Selecciona el contenedor del h2
+    const introSection2 = document.querySelector('#sobre-mi .intro2');
 
     function scrollToSection(targetId, hideScrollDown = true) {
         const target = document.getElementById(targetId);
@@ -70,6 +71,12 @@ document.addEventListener('DOMContentLoaded', function() {
             introSection.classList.add('visible'); // Hacer visible el h2
         } else {
             introSection.classList.remove('visible'); // Ocultar el h2
+        }
+
+        if (scrollPosition >= proyectosPosition - windowHeight / 2 && scrollPosition < proyectosPosition + windowHeight / 2) {
+            introSection2.classList.add('visible'); // Hacer visible el h2
+        } else {
+            introSection2.classList.remove('visible'); // Ocultar el h2
         }
     }
 

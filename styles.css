@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* nav{
+    display: flex;
+    font-family: 'Anago Bold', sans-serif;
+    font-size: 100%;
+    border-bottom: 0.1px solid white;
+    align-items: center;
+}
+
+img{
+    width: 3%;
+}
+
+nav a{
+    align-items: center;
+    margin-left: 2%;
+} */
+
+/* Estilo base para los enlaces de navegación (texto) */
+/* Estilo base para los enlaces de navegación (texto) */
+nav a.text-link {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el subrayado en hover */
+nav a.text-link::after {
+    content: ''; /* Necesario para el pseudo-elemento */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Espacio entre el texto y la línea subrayada */
+    width: 100%;
+    height: 2px; /* Altura de la línea subrayada */
+    background-color: white; /* Color de la línea subrayada */
+    transform: scaleX(0); /* Inicialmente oculta */
+    transform-origin: bottom right; /* Inicio de la animación desde la esquina inferior derecha */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Mostrar el subrayado en hover */
+nav a.text-link:hover::after {
+    transform: scaleX(1); /* Mostrar el subrayado */
+    transform-origin: bottom left; /* Animación desde la esquina inferior izquierda */
+}
+
+/* Estilo para la imagen */
+nav a img {
+    margin-left: 0; /* Ajusta el margen si es necesario */
+}
+
+
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px white solid;
+    height: 35em;
+}
+
+.name{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10vw; 
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 9vw;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+    white-space: nowrap;
+}
+
+#scroll-down {
+    /* Estilos para la flecha */
+    position: fixed;
+    bottom: 2rem; /* Ajusta la distancia desde el fondo */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ajusta el espacio según sea necesario */
+}
+
+#proyectos {
+    padding-top: 20rem;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es limitado */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 2rem; /* Espacio entre los elementos, ajusta según sea necesario */
+}
+
+#proyectos .intro {
+    width: 100%; /* Asegura que el contenedor del h2 ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    opacity: 0; /* Oculta el h2 inicialmente */
+    transition: opacity 3s ease; /* Transición suave para la aparición del h2 */
+}
+
+/* Clase para hacer visible el h2 */
+#proyectos .intro.visible {
+    opacity: 1; /* Muestra el h2 cuando se necesita */
+}
+
+#proyectos .max-w-sm img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 250px; /* Ajusta la altura deseada para todas las imágenes */
+ /* Opcional: Mantiene el borde redondeado */
+}
+
+#proyectos .max-w-sm {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center;
+}
+
+/* Estilo para el hover */
+#proyectos .max-w-sm:hover {
+    transform: scale(1.05) rotate(2deg); /* Escala y rota ligeramente la carta */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Agrega una sombra más grande */
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* Igual al tamaño del botón de scroll down */
+    height: 40px; /* Igual al tamaño del botón de scroll down */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Inicialmente oculto */
+}
+
+#scroll-to-top.visible {
+    opacity: 1; /* Visible cuando se necesita */
+}
+
+#scroll-to-top svg {
+    width: 30px; /* Igual al tamaño del icono de scroll down */
+    height: 30px; /* Igual al tamaño del icono de scroll down */
+}
+
+
+
+
+

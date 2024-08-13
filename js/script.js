@@ -73,11 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
             introSection.classList.remove('visible'); // Ocultar el h2
         }
 
-        if (scrollPosition >= proyectosPosition - windowHeight / 2 && scrollPosition < proyectosPosition + windowHeight / 2) {
-            introSection2.classList.add('visible'); // Hacer visible el h2
+        if (scrollPosition >= (sobreMiPosition - windowHeight / 2) && scrollPosition < (sobreMiPosition + windowHeight / 2)) {
+            introSection2.classList.add('visible'); // Hacer visible el h2 de "SOBRE MÍ"
         } else {
-            introSection2.classList.remove('visible'); // Ocultar el h2
+            introSection2.classList.remove('visible'); // Ocultar el h2 de "SOBRE MÍ"
         }
+        
     }
 
     function scrollToTop() {

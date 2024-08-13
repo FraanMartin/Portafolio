@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Monoton&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Monoton&family=Rampart+One&family=Rubik+Dirt&display=swap');
 
 
 body{
@@ -68,17 +72,17 @@ nav a img {
 }
 
 .name{
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 10vw; 
+    font-family: "Bungee Shade", sans-serif;
+    font-size: 8vw; 
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .title{
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 9vw;
+    font-family: "Rampart One", sans-serif;
+    font-size: 5vw;
     margin: 0;
     padding: 0;
     line-height: 0.8;
@@ -100,6 +104,16 @@ nav a img {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es limitado */
     justify-content: center; /* Centra los elementos horizontalmente */
     gap: 2rem; /* Espacio entre los elementos, ajusta según sea necesario */
+}
+
+.intro{
+    font-family: "Rubik Dirt", system-ui;
+    font-size: 3vw; 
+}
+
+.intro2{
+    font-family: "Rubik Dirt", system-ui;
+    font-size: 3vw; 
 }
 
 #proyectos .intro {

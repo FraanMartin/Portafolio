@@ -68,7 +68,7 @@ nav a img {
     justify-content: center;
     align-items: center;
     border-bottom: 1px white solid;
-    height: 35em;
+    height: 45em;
 }
 
 .name{
@@ -132,7 +132,7 @@ nav a img {
     width: 100%; /* Asegura que el contenedor del h2 ocupe todo el ancho disponible */
     text-align: center; /* Centra el texto */
     opacity: 0; /* Oculta el h2 inicialmente */
-    transition: opacity 3s ease; /* Transición suave para la aparición del h2 */
+    transition: opacity 1s ease; /* Transición suave para la aparición del h2 */
 }
 
 /* Clase para hacer visible el h2 */

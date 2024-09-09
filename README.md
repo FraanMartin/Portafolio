@@ -40,6 +40,10 @@
     <img src="https://img.shields.io/badge/typescript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white"
       alt="typescript"/>
   </a>
+&emsp;
+  <a href="https://www.ibm.com/products/cobol-compiler" target="_blank">
+    <img alt="COBOL" src="https://img.shields.io/badge/COBOL-0054A6.svg?logo=cobol&logoColor=white">
+  </a>
 </p>
 
 ### 👉 Frontend Development
@@ -157,3 +161,8 @@
 	<a href="https://github.com/FraanMartin"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
 	<a href="https://www.linkedin.com/in/francisco-martin-rumi/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
 </p>
+
+
+
+
+
